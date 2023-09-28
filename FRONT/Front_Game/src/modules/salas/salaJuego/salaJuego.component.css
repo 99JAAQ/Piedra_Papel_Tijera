@@ -1,0 +1,15 @@
+.opciones {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.seleccionado {
+  border: 1px solid blue;
+  padding: 1%;
+}

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{74AF161F-C2BC-419D-9E17-41B6C1D530D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{3ADCCFDB-309F-4BFE-8518-F88791392D06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{F684D1E0-91A5-49C1-B12E-DAC3C9615E8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2E5B0879-C912-4275-8EFA-3744E3019D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedra.Papel.Tijera.Service", "Piedra.Papel.Tijera.Service\Piedra.Papel.Tijera.Service.csproj", "{9263FAA1-52D5-4E3A-A58F-93B768074060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedra.Papel.Tijera.Infraestructure", "Piedra.Papel.Tijera.Infraestructure\Piedra.Papel.Tijera.Infraestructure.csproj", "{785F8D92-DABB-48F4-A355-25E1D59AFB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedra.Papel.Tijera.Common", "Piedra.Papel.Tijera.Common\Piedra.Papel.Tijera.Common.csproj", "{7075C758-8857-45E5-AABE-416DD0BF26A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piedra.Papel.Tijera.WebApi", "Piedra.Papel.Tijera.WebApi\Piedra.Papel.Tijera.WebApi.csproj", "{32A57C9C-927E-4BE3-9E9C-5892295FA9E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9263FAA1-52D5-4E3A-A58F-93B768074060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9263FAA1-52D5-4E3A-A58F-93B768074060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9263FAA1-52D5-4E3A-A58F-93B768074060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9263FAA1-52D5-4E3A-A58F-93B768074060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785F8D92-DABB-48F4-A355-25E1D59AFB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785F8D92-DABB-48F4-A355-25E1D59AFB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785F8D92-DABB-48F4-A355-25E1D59AFB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785F8D92-DABB-48F4-A355-25E1D59AFB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7075C758-8857-45E5-AABE-416DD0BF26A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7075C758-8857-45E5-AABE-416DD0BF26A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7075C758-8857-45E5-AABE-416DD0BF26A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7075C758-8857-45E5-AABE-416DD0BF26A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32A57C9C-927E-4BE3-9E9C-5892295FA9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32A57C9C-927E-4BE3-9E9C-5892295FA9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32A57C9C-927E-4BE3-9E9C-5892295FA9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32A57C9C-927E-4BE3-9E9C-5892295FA9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9263FAA1-52D5-4E3A-A58F-93B768074060} = {3ADCCFDB-309F-4BFE-8518-F88791392D06}
+		{785F8D92-DABB-48F4-A355-25E1D59AFB83} = {F684D1E0-91A5-49C1-B12E-DAC3C9615E8E}
+		{7075C758-8857-45E5-AABE-416DD0BF26A6} = {2E5B0879-C912-4275-8EFA-3744E3019D10}
+		{32A57C9C-927E-4BE3-9E9C-5892295FA9E0} = {74AF161F-C2BC-419D-9E17-41B6C1D530D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81945706-E0A4-4FD1-90D4-D7B3A48440C7}
+	EndGlobalSection
+EndGlobal

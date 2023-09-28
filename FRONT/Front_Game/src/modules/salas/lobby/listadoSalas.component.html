@@ -1,0 +1,42 @@
+<spinner-component></spinner-component>
+<breadcrumb-component [inplsbreadcrumb]="breadcrumb">
+</breadcrumb-component>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>                 
+        <th scope="col">Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of listadoSalas">
+        <td>{{ item?.fullName }}</td>                  
+            <td>
+             <button (click)="invitarSala(item)" class="me-4" mat-raised-button color="primary">
+                Invitar
+            </button>                       
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <!-- <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>                 
+                    <th scope="col">Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listadoSalas">
+                    <td>{{ item?.fullName }}</td>                  
+                    <td>
+                        <button (click)="invitarSala(item)" class="me-4" mat-raised-button color="primary">
+                            Invitar
+                        </button>                       
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> -->

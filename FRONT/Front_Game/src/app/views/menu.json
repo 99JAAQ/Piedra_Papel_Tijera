@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "Inicio",
+    "iconoTitulo": "fas fa-users",
+    "url": "inicio/home",
+    "unique": false
+  },
+  {
+    "id": 2,
+    "titulo": "listado",
+    "iconoTitulo": "fas fa-users",
+    "url": "inicio/salas/lobby",
+    "unique": false
+  }  
+]

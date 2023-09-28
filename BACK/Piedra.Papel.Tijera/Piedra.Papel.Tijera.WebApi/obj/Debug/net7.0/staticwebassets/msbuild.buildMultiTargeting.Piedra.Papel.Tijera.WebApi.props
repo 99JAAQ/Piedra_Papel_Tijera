@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Piedra.Papel.Tijera.WebApi.props" />
+</Project>

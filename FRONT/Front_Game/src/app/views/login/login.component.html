@@ -1,0 +1,35 @@
+<div class="row formulario">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h1>Iniciar sesión</h1><br />
+        <ngx-spinner bdColor="rgba(51,51,51,0.4)" size="medium" color="#fff" type="ball-scale-multiple">
+            <p class="font-size-20 c-white">Procesando...</p>
+        </ngx-spinner>
+        <form (ngSubmit)="ingresar()" [formGroup]="_formulario">
+            <div class="form-group">
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Usuario</mat-label>
+                    <input matInput formControlName="txtUsuario" id="txtUsuario" name="txtUsuario">
+                </mat-form-field>
+                <div *ngIf="_formulario.controls['txtUsuario'].errors 
+              && !_formulario.controls['txtUsuario'].pristine" class="mb-6" class="form-text text-danger alert-danger">
+                    Usuario obligatorio
+                </div>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="w-100" appearance="fill">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput type="password" id="txtPassword" name="txtPassword" formControlName="txtPassword"
+                        autocomplete="on">
+                </mat-form-field>
+                <div *ngIf="_formulario.controls['txtPassword'].errors  && 
+                !_formulario.controls['txtPassword'].pristine" class="mb-2" class="form-text text-danger alert-danger">
+                    Contraseña obligatorio
+                </div>
+            </div>
+            <button [disabled]="!_formulario.valid" type="submit" class="btn btn-primary btnCrear">Iniciar</button>
+        </form>
+        <div class="text-center">
+            <p>¿Quieres crear un usuario? <a href="/crearusuario">Registro</a></p>
+        </div>
+    </div>
+</div>

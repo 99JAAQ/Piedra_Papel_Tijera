@@ -1,0 +1,8 @@
+<div class="mt-4 mb-3">
+    <nav class="navbar navbar-light bg-light no-border" aria-label="breadcrumb">
+        <ol class="breadcrumb m-0 padding-left">
+            <li *ngFor="let bread of inplsbreadcrumb; let $last = last" class="breadcrumb-item"
+                [ngClass]="{'active': $last}">{{ bread.nombre }}</li>            
+        </ol>
+    </nav>
+</div>

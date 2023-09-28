@@ -1,0 +1,51 @@
+<spinner-component></spinner-component>
+<breadcrumb-component [inplsbreadcrumb]="breadcrumb">
+</breadcrumb-component>
+<div class="container">
+    <div class="mb-4">
+        <h1>Marcador</h1>
+        <div>
+            <strong>Ganadas</strong>: {{ganadas}}
+        </div>
+        <div>
+            <strong>Perdidas</strong>: {{perdidas}}
+        </div>
+    </div>
+    <h3 class="text-center mb-5">Selecciona una opción</h3>
+    <div class="text-center mb-5">
+        <button *ngIf="ocultarBoton == false" (click)="jugar()" mat-raised-button color="primary">
+            Jugar
+        </button>
+    </div>
+    <div>
+        <div *ngIf="empate == true" class="alert alert-secondary" role="alert">
+            Empate
+        </div>
+        <div *ngIf="ganoYo == true"  class="alert alert-success" role="alert">
+            Ganador
+        </div>
+        <div *ngIf="ganaRival == true"  class="alert alert-danger" role="alert">
+            Perdedor
+        </div>
+    </div>
+    <div class="flexbox-container mb-5">
+        <div *ngFor="let item of opciones" class="opciones">
+            <img [ngClass]="item.seleccionado == true ? 'seleccionado':''" (click)="seleccionar(item)"
+                src="{{item.img}}">
+        </div>
+    </div>
+    <h3 class="text-center mb-5"> {{ txtSeleccionado }} </h3>
+    <hr>
+    <h3 class="text-center mb-5">
+        {{ respuestaRival != null ? ('El rival ya selecciono'):('Esperando al otro jugador...') }}
+    </h3>
+    <div *ngIf="respuestaRival != null && ocultarBoton == true">
+        <h4 class="text-center mb-3">
+            La respuesta del rival es:
+        </h4>
+        <div class="opciones">
+            <img src="{{objectRival?.img}}">
+        </div>
+    </div>
+    
+</div>
